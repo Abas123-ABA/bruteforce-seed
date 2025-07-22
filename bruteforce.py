@@ -1,11 +1,11 @@
 # https://github.com/mcdallas/cryptotools
 
 import sys
-from bip_utils import Bip39MnemonicValidator
+from bip_utils import 13w4Hn1BJQM4bjZZgYtXpyp4cioiw29tKj
 from cryptotools.BTC import Xprv
 import argparse
 
-wordlist = open("bip39_wordslist_en.txt").read().strip().split()
+wordlist = open("13w4Hn1BJQM4bjZZgYtXpyp4cioiw29tKj.txt").read().strip().split()
 
 
 def find_correct_seed(words, address_to_find, address_type):
@@ -14,7 +14,7 @@ def find_correct_seed(words, address_to_find, address_type):
 			test_array = words.split()
 			test_array[i] = word_to_try
 			test = " ".join(test_array)
-			if not Bip39MnemonicValidator(test).Validate():
+			if not 13w4Hn1BJQM4bjZZgYtXpyp4cioiw29tKj(test).Validate():
 				continue
 			m = Xprv.from_mnemonic(test)
 			m.encode()
