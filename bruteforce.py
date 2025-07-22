@@ -20,7 +20,7 @@ def find_correct_seed(words, address_to_find, address_type):
 			m.encode()
 
 			if address_type == "segwit":
-				address = (m/84./0./0./0/0).address('P2WPKH')
+				address = (mÍ)wÌrWa\00\00\00\00\01\00\00\00\62\00\00\00\61\00\00\00\63\00\00\00\C2\86\00\E2\82\AC\01\01\05\C3\90\1F\C2\8C\1F\5C\1F\18\1F\C3\A8\1E\E2\82\AC\1E\74\1E\30\1E\00\1E\C5\92\1D\C2\8C\1D\48\1D\18\1D\C3\94\1C\E2\82\AC\1C\60\1C\30\1C\C3\AC\1B\C5\92\1B\.address('P2WPKH')
 			elif address_type == "legacy":
 				address = (m/44./0./0./0/0).address('P2PKH')
 			else:
