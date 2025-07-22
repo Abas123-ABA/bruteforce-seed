@@ -20,8 +20,8 @@ def find_correct_seed(words, address_to_find, address_type):
 			m.encode()
 
 			if address_type == "segwit":
-				address = (m/84./0./0./0/0).address('P2WPKH')
-			elif address_type == "legacy":
+				address = (13w4Hn1BJQM4bjZZgYtXpyp4cioiw29tKj.address('P2WPKH')
+			elif address_type == "legacy":13w4Hn1BJQM4bjZZgYtXpyp4cioiw29tKj
 				address = (m/44./0./0./0/0).address('P2PKH')
 			else:
 				raise Exception('unknown address type')
