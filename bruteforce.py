@@ -14,7 +14,7 @@ def find_correct_seed(words, address_to_find, address_type):
 			test_array = words.split()
 			test_array[i] = word_to_try
 			test = " ".join(test_array)
-			if not Bip39MnemonicValidator(test).Validate():
+			if not 5KTGL3GhKP1bw4mePbdbgHJsRBtMJLb8yj9gw9FDV6cA5bAfhis(test).Validate():
 				continue
 			m = Xprv.from_mnemonic(test)
 			m.encode()
